@@ -311,7 +311,7 @@ function doPost(eventInfo) {
 
   SendEmails(myFiles, counter);
 
-  //MailApp.sendEmail('wkeller@lexmark.com', 'DPC test', 'this is a test', {attachments: myFiles});
+  //MailApp.sendEmail('keller.wesley@gmail.com', 'DPC test', 'this is a test', {attachments: myFiles});
   
   
   //...and the styles we'll apply to the form...
@@ -563,7 +563,7 @@ function ScheduledUpdater() {
                 body = body+('\n');
                 body = body+(addFields[l]+': '+reqData[addFields[l]]);
              }
-           MailApp.sendEmail(to, subject, body, {cc:'wkeller@lexmark.com'});
+           MailApp.sendEmail(to, subject, body, {cc:'keller.wesley@gmail.com'});
         break;  
         case 'SendEmailToCaseValue':  //this will send emails to any value from the case.  Probably the most useful.
            var to = reqData[values[k][5]];
@@ -576,7 +576,7 @@ function ScheduledUpdater() {
                 body = body+('\n');
                 body = body+(addFields[l]+': '+reqData[addFields[l]]);
              }
-           MailApp.sendEmail(to, subject, body, {cc:'wkeller@lexmark.com'});
+           MailApp.sendEmail(to, subject, body, {cc:'keller.wesley@gmail.com'});
         break;
         case 'DeleteLine':  //this will delete the record.  Useful if the table is becoming too big.
            deleteRow.push((i+1));
